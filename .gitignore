@@ -1,1 +1,5 @@
-".env" 
+# .gitignore
+.env           # Ignores the .env file
+__pycache__/   # Ignores Python cache
+*.log          # Ignores log files
+.env
