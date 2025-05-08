@@ -1,11 +1,11 @@
 import openai
-from config import get_openai_key, MODEL
+from config import get_openai_api_key, Model
 from datetime import datetime
 
 
 class ChatBot:
     def __init__(self):
-        self.client = openai.OpenAI(api_key=get_openai_key())
+        self.client = openai.OpenAI(api_key=get_openai_api_key())
         self.history = []
 
     def chat(self, prompt, system_message="You are a helpful assistant."):
@@ -16,7 +16,7 @@ class ChatBot:
         ]
 
         response = self.client.chat.completions.create(
-            model=MODEL, messages=messages, temperature=0.7
+            model=Model, messages=messages, temperature=0.7
         )
         return response.choices[0].message.content
 

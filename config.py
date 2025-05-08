@@ -12,4 +12,4 @@ def get_openai_api_key():
     return key
 
 
-Model = "gpt-4"
+Model = "gpt-3.5-turbo"  # Default model
