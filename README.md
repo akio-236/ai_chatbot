@@ -55,12 +55,10 @@ You: quit
 ## Project Structure
 ```bash
 ai_chatbot/
-├── .env                
+├── .gitignore             
 ├── chatbot.py          
 ├── requirements.txt   
-└── utils/
-    ├── config.py       
-    └── history.log    
+└── config.py
 ```
 
 ## Customization 
